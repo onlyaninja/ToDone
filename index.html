@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>To Do List</h1>
+
+    <div class="to-do-list-div">
+      <form id="toDoForm">
+        <div class="to-do-controls">
+          <label for="newToDo">Item to do</label>
+          <input type="text" id="newToDoIn" />
+        </div>
+        <div class="to-do-controls">
+          <label for="newToDoPriority">Priority of item? (1-3)</label>
+          <input type="number" id="newToDoPriorityIn" />
+        </div>
+        <div class="to-do-controls">
+          <button id="addToDoBtn" class="">
+            Add to to do list
+          </button>
+        </div>
+      </form>
+
+      <ul id="toDoList" class="to-do-list"></ul>
+    </div>
+
+    <h1>Timer</h1>
+    <div class="timer-div">
+      <div class="time-remaining-div">
+        <p id="timeRemaining" class="time-remaining">No Time Set</p>
+      </div>
+
+      <div class="timer-inputs-div">
+        <form id="taskInputForm">
+          <input
+            type="number"
+            id="minutesIn"
+            placeholder="Input Number of Minutes"
+          />
+          <input
+            type="text"
+            id="objectiveIn"
+            placeholder="What do you want to achieve?"
+          />
+          <button id="goBtn">Go</button>
+        </form>
+        <button id="stopBtn">Stop</button>
+        <!--<button id="pauseBtn">Pause</button>-->
+      </div>
+    </div>
+
+    <div class="log-list-div">
+      <h1>Log</h1>
+      <ul class="log-list" id="logList"></ul>
+    </div>
+
+    <audio id="alarmAudio" class="alarm" controls>
+      <source src="sounds/fiveMinInterval.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

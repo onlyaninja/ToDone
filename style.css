@@ -1,0 +1,128 @@
+body {
+  font-family: Calibri, sans-serif;
+  padding: 0 20px;
+  color: rgba(20, 20, 100, 1);
+}
+
+h1 {
+  text-align: center;
+  background-color: rgba(0, 0, 180, 0.2);
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(20, 20, 250, 0.4);
+  font-weight: bolder;
+  padding: 6px 0;
+  color: rgba(40, 40, 130, 1);
+}
+
+.to-do-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.to-do-list li {
+  padding: 1px;
+  border-bottom: 1px solid darkslategray;
+  text-align: left;
+}
+
+.to-do-list-btn {
+  font-size: 1.1rem;
+  line-height: 30px;
+  text-align: center;
+  border: none;
+  width: 40px;
+  transition: opacity 0.3s ease;
+  opacity: 0.1;
+}
+
+li {
+  font-size: 1.2rem;
+}
+
+li:hover .to-do-list-btn {
+  opacity: 1;
+  cursor: pointer;
+  background-color: cornflowerblue;
+}
+
+.to-do-item-priority {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.to-do-controls {
+  font-size: 1.2rem;
+  margin: 2px 20px;
+  line-height: 1.8rem;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.to-do-controls input {
+  width: 48%;
+}
+
+.add-to-do-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.timer-div {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  height: 200px;
+  overflow: auto;
+}
+
+.time-remaining-div {
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 100, 0.1);
+  border-radius: 5px;
+  left: 0;
+}
+
+.time-remaining {
+  padding: 20px;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.timer-inputs-div {
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  right: 5%;
+}
+
+.timer-inputs-div input,
+button {
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.log-list-div {
+  margin: 10px 0;
+  border-top: rgba(0, 0, 100, 0.1);
+}
+
+.log-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.alarm {
+  display: none;
+}
